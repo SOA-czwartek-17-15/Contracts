@@ -10,4 +10,4 @@ Wydaje mi się, że ten artykuł o nim mówi: http://msdn.microsoft.com/en-us/li
 
 Wszystkie klasy i interfejsy powinny się znaleźc wewnątrz przestrzeni nazw "Contracts".
 
-UWAGA: Polecam zapoznać się z plikaim *wzor1.cs* i *wzor2.cs*, które pokazują, jak ma wyglądać treść plików tu wrzucanych. Oprócz tego w pliku wzor-implementacja.cs znajduje się skrót tego, co ma znaleźć się w metodzie main każdej usługi.
+UWAGA: Polecam zapoznać się z plikaim *wzor1.cs* i *wzor2.cs*, które pokazują, jak ma wyglądać treść plików tu wrzucanych. Oprócz tego w pliku *wzor-implementacja.cs* znajduje się skrót tego, co ma znaleźć się w metodzie main każdej usługi.
