@@ -14,6 +14,6 @@ namespace Contracts
         long CreateAccount(int clientId, Account details);
 
         [OperationContract]
-        Account GetAccountInformation(long accountNumber);
+        Account GetAccountInformation(string accountNumber);
     }
 }
