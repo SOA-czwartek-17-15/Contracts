@@ -14,9 +14,13 @@ namespace Contracts
         [OperationContract]
         int GetNumberOfTransfersByDate(DateTime date);
         [OperationContract]
+        int GetNumberOfTransfersByAccount(int accountId);
+        [OperationContract]
         int GetTransferedMoneyByDate(DateTime date);
         [OperationContract]
-        int GetCreditNumber();
+        int GetTransferedMoneyByAccount(int accountId);
+        [OperationContract]
+        int GetNumberOfCredits();
         [OperationContract]
         IEnumerable<Audit> AuditAll();
         [OperationContract]
