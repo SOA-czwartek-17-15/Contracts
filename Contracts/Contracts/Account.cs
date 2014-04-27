@@ -10,29 +10,29 @@ namespace Contracts
     [DataContract]
     public class Account
     {
-        public Guid Id { get; set; }
-        public string AccountNumber { get; set; }
+        public Guid id { get; set; }
+        public string accountNumber { get; set; }
         [DataMember]
-        public int ClientId { get; set; }
+        public int clientId { get; set; }
         [DataMember]
-        public string FirstName { get; set; }
+        public string firstName { get; set; }
         [DataMember]
-        public string LastName { get; set; }
+        public string lastName { get; set; }
         [DataMember]
-        public long Money { get; set; }
+        public long money { get; set; }
         [DataMember]
-        public string Pesel { get; set; }
+        public string pesel { get; set; }
         [DataMember]
-        public string Address { get; set; }
+        public string address { get; set; }
         [DataMember]
-        public string PhoneNumber { get; set; }
+        public string phoneNumber { get; set; }
         [DataMember]
-        public string Type { get; set; }
+        public string type { get; set; }
         [DataMember]
-        public double Percentage { get; set; }
+        public double percentage { get; set; }
         [DataMember]
-        public DateTime EndDate { get; set; }
+        public DateTime endDate { get; set; }
         [DataMember]
-        public DateTime StartDate { get; set; }
+        public DateTime startDate { get; set; }
     }
 }
