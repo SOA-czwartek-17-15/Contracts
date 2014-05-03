@@ -19,25 +19,47 @@ UWAGA: Polecam zapoznać się z plikaim *wzor1.cs* i *wzor2.cs*, które pokazuj�
 Abyście wiedzieli, kogo o co dręczyć:
 
 Konrad Seweryn - sevikon - IServiceRepository
+
 Mateusz Ścirka - mateuszs - IServiceRepository
 
+=========
+
 Magdalena Witkowska - magdzia - IAccountRepository
+
 Małgorzata Maciurzyńska - malgmaci - IAccountRepository
 
+=========
+
 Mateusz Kotlarz - rampler - ICanExternalTransferMoney
+
 Kacper Półchłopek - jelcz - ICanExternalTransferMoney
 
+=========
+
 Bartłomiej Hebda - bartQH - IClientRepository
+
 Tomasz Bąba - Munez3 - IClientRepository
 
+=========
+
 Piotr Mitana - the-Mitu - ICanTransferMoney
+
 Tomasz Idziak - mastablasta1 - ICanTransferMoney
 
+=========
+
 Michał Kurzeja - michalkurzeja - IAuditorService
+
 Tomasz Kalinowski - kalinowskitomasz - IAuditorService
 
+=========
+
 Michał Urbanek - kremuwa - IDepositRepository
+
 Michał Gajda - Altertwin - IDepositRepository
 
+=========
+
 Wojciech Harzowski - harzo - IClientService
+
 Krzysztof Gaszyński - krisu-pl - IClientService
