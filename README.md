@@ -18,6 +18,8 @@ UWAGA: Polecam zapoznać się z plikaim *wzor1.cs* i *wzor2.cs*, które pokazuj�
 
 Abyście wiedzieli, kogo o co dręczyć:
 
+=========
+
 Konrad Seweryn - sevikon - IServiceRepository
 
 Mateusz Ścirka - mateuszs - IServiceRepository
