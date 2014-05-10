@@ -10,6 +10,6 @@ namespace Contracts
     public interface ICanTransferMoney
     {
         [OperationContract]
-        bool TransferMoney(string idFrom, string idTo, long amount);
+        bool TransferMoney(Guid idFrom, Guid idTo, long amount);
     }
 }
