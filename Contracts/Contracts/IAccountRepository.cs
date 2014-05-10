@@ -20,6 +20,6 @@ namespace Contracts
 
         // amount to kwota ktora ma zostac dodana/odjeta od konta (w zaleznosci od znaku)
         [OperationContract]
-        bool ChangeAccountBalance(string accountNumber, long amount);
+        bool ChangeAccountBalance(string accountId, long amount);
     }
 }
