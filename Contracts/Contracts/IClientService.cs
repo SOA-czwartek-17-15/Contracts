@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,12 +7,15 @@ using System.ServiceModel;
 namespace Contracts
 {
     [ServiceContract]
-    public interface IAccountRepository
+    public interface IClientRepository
     {
         [OperationContract]
-        long CreateAccount(int clientId, Account details);
+        boolean logIn();
 
         [OperationContract]
-        Account GetAccountInformation(string accountNumber);
+        boolean logOut();
+
+        [OperationContract]
+        Account getAccountInformation(long accountNumber);
     }
 }
