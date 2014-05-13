@@ -9,11 +9,21 @@ namespace Contracts
     [ServiceContract]
     public interface IServiceRepository
     {
-        void RegisterService(string serviceName, string serviceAddress);
-        void UnregisterService(string serviceName);
+        /*Zarejestrowanie Serwisu*/
+        [OperationContract]
+        void RegisterService(String Name, String Address);
 
-        string GetServiceAddress(string serviceName);
+        /*Pobranie adresu Serwisu*/
+        [OperationContract]
+        string GetServiceLocation(String Name);
 
-        void IsAlive(string serviceName);
+        /*Wyrejestrowanie Serwisu*/
+        [OperationContract]
+        void Unregister(String Name);
+
+        /*Zgłoszenie się, że Serwis nadal działa (po 5s od ostatniego zgłoszenia
+         serwis uznany jest za niedziałający i usuwany)*/
+        [OperationContract]
+        void Alive(String Name);
     }
 }
