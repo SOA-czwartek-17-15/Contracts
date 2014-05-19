@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true"
+                   assembly="Contracts" namespace="Contracts">
+
+  <class name="Contracts.Audit, Contracts">
+    <id name="Id">
+      <generator class="guid" />
+    </id>
+    <property name="AccountNumber" />
+    <property name="Money" />
+    <property name="Date" />
+  </class>
+
+</hibernate-mapping>
