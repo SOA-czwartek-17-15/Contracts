@@ -11,7 +11,7 @@ namespace Contracts
     {
         public Guid Id { get; set; }
         [DataMember]
-        public int AccountId { get; set; }
+        public String AccountNumber { get; set; }
         [DataMember]
         public long Money { get; set; }
         [DataMember]

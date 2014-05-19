@@ -13,11 +13,11 @@ namespace Contracts
         [OperationContract]
         int GetNumberOfTransfersByDate(DateTime date);
         [OperationContract]
-        int GetNumberOfTransfersByAccount(Guid accountId);
+        int GetNumberOfTransfersByAccount(String accountNumber);
         [OperationContract]
         int GetTransferedMoneyByDate(DateTime date);
         [OperationContract]
-        int GetTransferedMoneyByAccount(Guid accountId);
+        int GetTransferedMoneyByAccount(String accountNumber);
         [OperationContract]
         int GetNumberOfCredits();
         [OperationContract]
@@ -25,8 +25,8 @@ namespace Contracts
         [OperationContract]
         IEnumerable<Audit> GetAuditsByDate(DateTime date);
         [OperationContract]
-        IEnumerable<Audit> GetAuditsByAccount(Guid accountId);
+        IEnumerable<Audit> GetAuditsByAccount(String accountNumber);
         [OperationContract]
-        bool AddAudit(Guid accountId, long Money);
+        bool AddAudit(String accountNumber, long Money);
     }
 }
