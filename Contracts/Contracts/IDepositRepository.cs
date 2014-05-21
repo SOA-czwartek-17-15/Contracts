@@ -6,10 +6,10 @@ namespace Contracts
     [ServiceContract]
     public interface IDepositRepository
     {
-        [OperationContract]
+        [OperationContract(Name="CreateDepositForClient")]
         Guid CreateDeposit(Guid clientId, Deposit deposit);
 
-        [OperationContract]
+        [OperationContract(Name="CreateDepositForAccount")]
         Guid CreateDeposit(string accountNumber, Deposit deposit);
 
         [OperationContract]
