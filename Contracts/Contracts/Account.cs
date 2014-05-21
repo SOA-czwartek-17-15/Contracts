@@ -9,30 +9,26 @@ namespace Contracts
     [DataContract]
     public class Account
     {
-        // zakomentowane pola chyba nie sa zwiazane z kontem, ale klientem
-        public Guid id { get; set; }
-        public string accountNumber { get; set; }
+        public Guid Id { get; set; }
+        public string AccountNumber { get; set; }
         [DataMember]
-        public int clientId { get; set; }
-        //[DataMember]
-        //public string firstName { get; set; }
-        //[DataMember]
-        //public string lastName { get; set; }
+        public int ClientId { get; set; }
         [DataMember]
-        public long money { get; set; }
-        //[DataMember]
-        //public string pesel { get; set; }
-        //[DataMember]
-        //public string address { get; set; }
-        //[DataMember]
-        //public string phoneNumber { get; set; }
+        public long Money { get; set; }
         [DataMember]
-        public string type { get; set; }
+        public AccountType Type { get; set; }
         [DataMember]
-        public double percentage { get; set; }
+        public double Percentage { get; set; }
         [DataMember]
-        public DateTime endDate { get; set; }
+        public DateTime EndDate { get; set; }
         [DataMember]
-        public DateTime startDate { get; set; }
+        public DateTime StartDate { get; set; }
+    }
+
+
+    public enum AccountType
+    {
+        Normal,
+        Deposit,
     }
 }
