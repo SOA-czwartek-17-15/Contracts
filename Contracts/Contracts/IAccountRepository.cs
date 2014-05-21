@@ -10,7 +10,7 @@ namespace Contracts
     public interface IAccountRepository
     {
         [OperationContract]
-        long CreateAccount(int clientId, Account details);
+        long CreateAccount(Account details);
 
         [OperationContract]
         Account GetAccountInformation(string accountNumber);
