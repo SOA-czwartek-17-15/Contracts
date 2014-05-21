@@ -12,7 +12,7 @@ namespace Contracts
         public Guid Id { get; set; }
         public string AccountNumber { get; set; }
         [DataMember]
-        public int ClientId { get; set; }
+        public Guid ClientId { get; set; }
         [DataMember]
         public long Money { get; set; }
         [DataMember]
