@@ -10,11 +10,26 @@ namespace Contracts
     public interface IClientRepository
     {
         [OperationContract]
-        boolean logIn();
+        boolean logIn(Guid clientID);
 
         [OperationContract]
-        boolean logOut();
+        boolean logOut(Guid clientID);
 
+        [OperationContract]
+        boolean createClient();
+
+        [OperationContract]
+        boolean createAccount();
+        
+        [OperationContract]
+        boolean deposit();
+        
+        [OperationContract]
+        boolean internalTransfer();
+        
+        [OperationContract]
+        boolean externalTransfer();
+        
         [OperationContract]
         Account getAccountInformation(long accountNumber);
     }
