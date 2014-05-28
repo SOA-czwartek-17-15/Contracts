@@ -7,22 +7,22 @@ namespace Contracts
 	public class Deposit
 	{
 		[DataMember]
-		public Guid Id { get; set; }
+		virtual public Guid Id { get; set; }
 		[DataMember]
-		public Guid ClientId { get; set; }
+        virtual public Guid ClientId { get; set; }
 		[DataMember]
-		public string AccountNumber { get; set; }
+        virtual public string AccountNumber { get; set; }
 		[DataMember]
-		public string Type { get; set; }
+        virtual public string Type { get; set; }
 		[DataMember]
-		public double Interest { get; set; }
+        virtual public double Interest { get; set; }
 		[DataMember]
-		public int CapitalizationPeriod { get; set; }
+        virtual public int CapitalizationPeriod { get; set; }
 		[DataMember]
-		public double Money { get; set; }
+        virtual public double Money { get; set; }
 		[DataMember]
-		public string OpeningDate { get; set; }
+        virtual public string OpeningDate { get; set; }
 		[DataMember]
-		public string Duration { get; set; }
+        virtual public string Duration { get; set; }
 	}
 }
