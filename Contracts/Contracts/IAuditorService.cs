@@ -11,21 +11,11 @@ namespace Contracts
     public interface IAuditorService
     {
         [OperationContract]
-        int GetNumberOfTransfersByDate(DateTime date);
+        Audit GetLastAuditByAccount(string accountNumber)
         [OperationContract]
-        int GetNumberOfTransfersByAccount(String accountNumber);
+        IEnumerable<Audit> GetAllAuditsByAccount(string accountNumber)
         [OperationContract]
-        int GetTransferedMoneyByDate(DateTime date);
-        [OperationContract]
-        int GetTransferedMoneyByAccount(String accountNumber);
-        [OperationContract]
-        int GetNumberOfCredits();
-        [OperationContract]
-        IEnumerable<Audit> AuditAll();
-        [OperationContract]
-        IEnumerable<Audit> GetAuditsByDate(DateTime date);
-        [OperationContract]
-        IEnumerable<Audit> GetAuditsByAccount(String accountNumber);
+        IEnumerable<Audit> GetAllAudits()
         [OperationContract]
         bool AddAudit(String accountNumber, long Money);
     }
