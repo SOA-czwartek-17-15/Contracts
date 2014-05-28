@@ -7,30 +7,21 @@ using System.ServiceModel;
 namespace Contracts
 {
     [ServiceContract]
-    public interface IClientRepository
+    public interface IClientService
     {
         [OperationContract]
-        boolean logIn(Guid clientID);
+        bool TransferMoney();
 
         [OperationContract]
-        boolean logOut(Guid clientID);
+        bool CreateClient();
 
         [OperationContract]
-        boolean createClient();
+        bool GetClientInformation();
 
         [OperationContract]
-        boolean createAccount();
-        
+        bool GetAccountInformation();
+
         [OperationContract]
-        boolean deposit();
-        
-        [OperationContract]
-        boolean internalTransfer();
-        
-        [OperationContract]
-        boolean externalTransfer();
-        
-        [OperationContract]
-        Account getAccountInformation(long accountNumber);
+        bool GetOperations();
     }
 }
