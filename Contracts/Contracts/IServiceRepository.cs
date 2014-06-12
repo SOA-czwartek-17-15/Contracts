@@ -9,21 +9,28 @@ namespace Contracts
     [ServiceContract]
     public interface IServiceRepository
     {
-        /*Zarejestrowanie Serwisu*/
-        [OperationContract]
+        [OperationContract(Name = "RegisterServiceWithBinding")]
+        void RegisterService(String Name, String Address, String Binding);
+
+        [OperationContract(Name = "RegisterServiceWithoutBinding")]
         void RegisterService(String Name, String Address);
 
-        /*Pobranie adresu Serwisu*/
-        [OperationContract]
+        [OperationContract(Name = "GetServiceLocationWithBinding")]
+        string GetServiceLocation(String Name, String Binding);
+
+        [OperationContract(Name = "GetServiceLocationWithoutBinding")]
         string GetServiceLocation(String Name);
 
-        /*Wyrejestrowanie Serwisu*/
-        [OperationContract]
+        [OperationContract(Name = "UnregisterWithBinding")]
+        void Unregister(String Name, String Binding);
+
+        [OperationContract(Name = "UnregisterWithoutBinding")]
         void Unregister(String Name);
 
-        /*Zgłoszenie się, że Serwis nadal działa (po 5s od ostatniego zgłoszenia
-         serwis uznany jest za niedziałający i usuwany)*/
-        [OperationContract]
+        [OperationContract(Name = "AliveWithBinding")]
+        void Alive(String Name, String Binding);
+
+        [OperationContract(Name = "AliveWithoutBinding")]
         void Alive(String Name);
     }
 }
