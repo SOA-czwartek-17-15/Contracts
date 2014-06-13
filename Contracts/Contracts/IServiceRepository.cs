@@ -21,16 +21,13 @@ namespace Contracts
         [OperationContract(Name = "GetServiceLocationWithoutBinding")]
         string GetServiceLocation(String Name);
 
-        [OperationContract(Name = "UnregisterWithBinding")]
-        void Unregister(String Name, String Binding);
+        [OperationContract]
+        List<ServiceAB> GetServiceLocations(String Name);
 
-        [OperationContract(Name = "UnregisterWithoutBinding")]
+        [OperationContract]
         void Unregister(String Name);
 
-        [OperationContract(Name = "AliveWithBinding")]
-        void Alive(String Name, String Binding);
-
-        [OperationContract(Name = "AliveWithoutBinding")]
+        [OperationContract]
         void Alive(String Name);
     }
 }
