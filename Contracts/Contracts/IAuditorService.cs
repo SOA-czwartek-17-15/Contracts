@@ -11,11 +11,11 @@ namespace Contracts
     public interface IAuditorService
     {
         [OperationContract]
-        Audit GetLastAuditByAccount(string accountNumber)
+        Audit GetLastAuditByAccount(string accountNumber);
         [OperationContract]
-        IEnumerable<Audit> GetAllAuditsByAccount(string accountNumber)
+        IEnumerable<Audit> GetAllAuditsByAccount(string accountNumber);
         [OperationContract]
-        IEnumerable<Audit> GetAllAudits()
+        IEnumerable<Audit> GetAllAudits();
         [OperationContract]
         bool AddAudit(String accountNumber, long Money);
     }

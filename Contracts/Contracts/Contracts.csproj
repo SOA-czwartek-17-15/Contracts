@@ -47,11 +47,15 @@
     <Compile Include="Deposit.cs" />
     <Compile Include="IAccountRepository.cs" />
     <Compile Include="IAuditorService.cs" />
+    <Compile Include="ICanExternalTransferMoney.cs" />
     <Compile Include="ICanTransferMoney.cs" />
     <Compile Include="IClientRepository.cs" />
+    <Compile Include="IClientService.cs" />
     <Compile Include="IDepositRepository.cs" />
     <Compile Include="IServiceRepository.cs" />
+    <Compile Include="JSONMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceAB.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
