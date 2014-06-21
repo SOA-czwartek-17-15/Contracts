@@ -172,3 +172,7 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+*.sln
+*.csproj
+Contracts/Contracts/Contracts.csproj
+Contracts/Contracts/Contracts.csproj
