@@ -22,4 +22,31 @@ namespace Contracts
         [OperationContract]
         bool ChangeAccountBalance(Guid accountId, long amount);
     }
+
+    public class AccountRepositoryMessage
+    {
+        public string Action { get; set; }
+        public string Arguments { get; set; }
+    }
+
+    public class CreateAccountMessage
+    {
+        public Account details { get; set; }
+    }
+
+    public class GetAccountInformationMessage
+    {
+        public string accountNumber { get; set; }
+    }
+
+    public class GetAccountsByIdMessage
+    {
+        public Guid accountID { get; set; }
+    }
+
+    public class ChangeAccountBalanceMessage
+    {
+        public Guid accountID { get; set; }
+        public long money { get; set; }
+    }
 }
